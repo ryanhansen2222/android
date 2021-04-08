@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "TOAST", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button2:
-                Toast.makeText(this, "Button 2", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Button 2", Toast.LENGTH_SHORT).show();
                 startSecondActivity();
                 break;
             case R.id.button3:

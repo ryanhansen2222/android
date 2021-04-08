@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         Button talkbutton = findViewById(R.id.talkButton);
         talkbutton.setOnClickListener(this);
 
-        tts = new TTS(this);
+        tts = tts.getInstance(this);
         tts.start();
     }
 
