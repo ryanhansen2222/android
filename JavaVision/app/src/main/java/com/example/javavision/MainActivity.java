@@ -49,4 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent second = new Intent( this, SecondActivity.class);
         startActivity(second);
     }
+
+    public void startThirdActivity(){
+        Intent second = new Intent( this, ThirdActivity.class);
+        startActivity(second);
+
+    }
+
 }
