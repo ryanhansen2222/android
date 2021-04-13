@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
                 Toast.makeText(this, "Button 3", Toast.LENGTH_SHORT).show();
+                startThirdActivity();
                 break;
         }
 
