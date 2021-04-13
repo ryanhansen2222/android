@@ -49,11 +49,11 @@ public class TTS extends Thread implements TextToSpeech.OnInitListener {
 
     private void speakOut(String text) {
 
-        Toast.makeText(con, "Text 2 Speech" + text, Toast.LENGTH_LONG).show();
+        Toast.makeText(con, text, Toast.LENGTH_LONG).show();
 
         Log.v("***SPEECH***", text);
 
-        if(!last.equals(text)) {
+        if(true) {
             last = text;
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
             while (tts.isSpeaking()) {
