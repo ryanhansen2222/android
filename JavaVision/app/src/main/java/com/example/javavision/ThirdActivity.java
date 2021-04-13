@@ -28,7 +28,9 @@ public class ThirdActivity extends AppCompatActivity implements ImageAnalysis.An
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        tv = findViewById(R.id.textviewid);
+
+
+        tv = findViewById(R.id.textView2);
 
 
 
@@ -44,7 +46,7 @@ public class ThirdActivity extends AppCompatActivity implements ImageAnalysis.An
                         new OnSuccessListener<List<Face>>() {
                             @Override
                             public void onSuccess(@NonNull List<Face> faces) {
-                                tv.setText(faces.size() + "Faces Seen");
+                                tv.setText(faces.size() + " Faces Seen");
 
                             }
 
@@ -60,6 +62,9 @@ public class ThirdActivity extends AppCompatActivity implements ImageAnalysis.An
                         }
 
                 );
+
+
+
 
 
     }
